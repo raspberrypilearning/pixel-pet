@@ -1,10 +1,4 @@
-# Interactive Space Pet
-
-![](cover.png)
-
-Make your very own digital space pet with your Raspberry Pi and Sense HAT. 
-
-## Licence
+# Licence
 
 Unless otherwise specified, everything in this repository is covered by the following licence:
 
