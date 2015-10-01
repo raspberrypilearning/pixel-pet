@@ -1,7 +1,6 @@
-By creating a something with your Raspberry Pi you will learn:
+By creating your very own interactive space pet with code you will learn:
 
-- How to set up a Raspberry Pi camera
-- How to use GPIO pins
-- How to create a circuit on a breadboard
-- Controlling GPIO pins with Python code
-- Controlling the camera module with Python code
+- How to use `variables` and `lists` in Python to display an image on the Sense HAT LED matrix.
+- To use `loops` to repeat some instructions.
+- How to create a `function` in Python.
+- To use the Sense Hat's accerelometer to detect movement and trigger some code.
