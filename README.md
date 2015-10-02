@@ -23,7 +23,7 @@ See [software installation](software.md)
 ## The worksheet
 
 - Go to the [worksheet](worksheet.md)
-- Printable [workshop worksheet](files/prinatable-worksheet.pdf) based on this resource
+- Printable [workshop worksheet](files/printable-worksheet.pdf) based on this resource
 
 ## Licence
 
