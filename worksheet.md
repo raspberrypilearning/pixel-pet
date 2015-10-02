@@ -4,7 +4,7 @@ Using sensors and output devices are a great way to make your computer programs 
 
 ## Draw your Pixel Pet
 
-First you'll need to design your pet avatar before you program any actions. [Here are some examples](https://www.youtube.com/watch?v=PpHFQXoISWc) to give you an idea!
+First you'll need to design your pet avatar before you program any actions. [Here are some examples](https://www.youtube.com/watch?v=PpHFQXoISWc) to give you an idea! You can also print [this worksheet](files/printable-worksheet.pdf) to help you design your pixel pet.
 
 1. Open a Terminal by clicking on **Menu**, **Accessories** and **Terminal**
 1. Type `cd RPi_8x8GridDraw` and press **Enter** on the keyboard.
