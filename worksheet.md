@@ -1,8 +1,8 @@
-# Interactive Space Pet
+# Interactive Pixel Pet
 
 Using sensors and output devices are a great way to make your computer programs more interactive. The Raspberry Pi Sense HAT contains a whole set of sensors that can be used to detect movement, which will be used in this activity to take a digital pet for a walk. 
 
-## Draw your Space Pet
+## Draw your Pixel Pet
 
 First you'll need to design your pet avatar before you program any actions. [Here are some examples](https://www.youtube.com/watch?v=PpHFQXoISWc) to give you an idea!
 
@@ -16,7 +16,7 @@ First you'll need to design your pet avatar before you program any actions. [Her
 
 	![square paper avatar](images/square-paper.png)
 
-1. You will need another avatar design, preferably one that is very similar to the first so that we can animate your pet. Here you can see the same image as above, but the feet are in a different place:
+1. You will need another pet design, preferably one that is very similar to the first so that we can animate your pet. Here you can see the same image as above, but the feet are in a different place:
 
 	![](images/square-paper-2.png)	
 	
@@ -51,7 +51,7 @@ First you'll need to design your pet avatar before you program any actions. [Her
 
 	Can you think of any problems that might arise when only using one letter to label different colours? How might you solve this problem?	
 
-## Code your pet in Python 3
+## Code your Pet in Python 3
 Now that you have your designs represented as letters into a grid or array, you can start to code them in Python.
 
 1. Click on **Menu**, **Programming** followed by **Python 3**. This will open the Python 3 shell window.
