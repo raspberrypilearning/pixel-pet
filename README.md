@@ -16,6 +16,7 @@ As well as a Raspberry Pi, the usual peripherals, and an up-to-date SD card you'
 
 - Sense HAT for Python 3
 - python 3 pypng
+- 8x8GridDraw 
 
 See [software installation](software.md)
 
