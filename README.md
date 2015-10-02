@@ -2,7 +2,26 @@
 
 ![](cover.png)
 
-Make your very own digital space pet with your Raspberry Pi and Sense HAT. 
+Make your very own digital space pixel pet with your Raspberry Pi and Sense HAT. 
+
+## Requirements
+
+As well as a Raspberry Pi, the usual peripherals, and an up-to-date SD card you'll also need:
+
+### Hardware
+
+- Sense HAT
+
+### Software
+
+- Sense HAT for Python 3
+- python 3 pypng
+
+See [software installation](software.md)
+
+## The worksheet
+
+- Go to the [worksheet](worksheet.md)
 
 ## Licence
 
