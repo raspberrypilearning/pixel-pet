@@ -1,4 +1,4 @@
-By creating your very own interactive space pet with code you will learn:
+By creating your very own interactive pixel pet with code you will learn:
 
 - How to use `variables` and `lists` in Python to display an image on the Sense HAT LED matrix.
 - To use `for loops` and `while loops` repeat some instructions.
