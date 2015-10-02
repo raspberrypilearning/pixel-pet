@@ -118,17 +118,53 @@ Now that you have your designs represented as letters into a grid or array, you 
 	time.sleep(0.5)
 	sense.set_pixels(pet2)
 	```					    	
+	Save and run your code to see your pet.
+	
+	
+## Animate your Pet using a loop
 
-## Create a walking function
+So far your pixel pet only changes once. To fully animate you will need to repeat switching between the pictures with a time delay over and over again. 
 
-```python
-def walking():
+You could write the commands out over and over again but it makes more sense to put them into a loop. 
+
+1. Move to the end of your program and locate the `sense.set_pixels(pet1)` part and amend it look like this:
+
+	```python
     for i in range(10):
         sense.set_pixels(pet1)
         time.sleep(0.5)
         sense.set_pixels(pet2)
         time.sleep(0.5)
-```        
+	```
+	Don't foget to add the extra `time.sleep(0.5)` on the last line and remember to indent the lines after `for i in range(10):`. Indenting those lines mean that they are inside the for loop. 
+	
+	A `for` loop with the `range` function. This will repeat the indented code 10 times and stop.
+
+1. Save and run your code to watch the animation. 
+
+
+## Create a walking function
+
+A `function` is a piece of code that you can use over and over. As the goal is to trigger the walking animation later on it makes sense for us to put the animation code into a function that can be called when an action has been sensed by the hardware. 
+
+1. To put your code into a function you simply need to add this line above your `for` loop and indent the lines beneath like this:
+
+	```python
+	def walking():	
+		for i in range(10):
+        	sense.set_pixels(pet1)
+        	time.sleep(0.5)
+        	sense.set_pixels(pet2)
+        	time.sleep(0.5)
+    ```
+
+	The use of `def` here means that you are ***defining*** a function which you have called ***walking***.
+
+1. Now you need to call the function so at the bottom of your code type:
+
+	```python
+	walking()
+	```		         	
 
 ## Shake to trigger action
 
