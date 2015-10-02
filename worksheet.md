@@ -82,7 +82,7 @@ Now that you have your designs represented as letters into a grid or array, you 
 	y = (2014, 2014, 0) # Yellow
 	e = (0, 0, 0) # Empty
 	```
-	The numbers used here inside the brackets are **RGB values** or **Red, Green and Blue** values. A mixture of these colours make different colours. The higher the number the more of that colour it will contain. For example: (255, 0, 0) would make a solid red colour, whereas (0, 255, 0) would create a vivid green colour. 
+	The numbers used here inside the brackets are `RGB` values or `Red, Green and Blue` values. A mixture of these colours make different colours. The higher the number the more of that colour it will contain. For example: `(255, 0, 0)` would make a solid red colour, whereas `(0, 255, 0)` would create a vivid green colour. 
 	
 	You can change these numbers in your code to get the colours that you want. 
 	
