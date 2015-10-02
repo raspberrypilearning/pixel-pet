@@ -1,1 +1,1 @@
-Make your very own interactive digital space pixel pet with your Raspberry Pi and Sense HAT. 
+Using sensors and output devices are a great way to make your computer programs more interactive. The Raspberry Pi Sense HAT contains a whole set of sensors that can be used to detect movement, which will be used in this activity to take a digital pixel pet for a walk.
