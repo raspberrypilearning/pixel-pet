@@ -29,7 +29,7 @@ First you'll need to design your pet avatar before you program any actions. [Her
 
 	![](images/label-squares.png)
 	
-	***Note that `e` stands for `empty`.***
+	Note that `e` stands for `empty`.
 
 1. If you are using the 8x8GridDraw editor then you can write out your squares on paper, representing each colour with a letter and separating them with a comma. Alternatively you could type them into a text editor like **Leafpad** which you can find by clicking on **Menu**, **Acessories** and **Text Editor**. 
 	
@@ -103,6 +103,8 @@ Now that you have your designs represented as letters into a grid or array, you 
 	
 1. Repeat for the second pixel pet design using a different variable name like `pet2`.
 
+	![](images/idle3-code2.png)
+
 1. If you ran your code now nothing would happen because so far you have only told the program to store information. To make something happen you will need to write a command to call on that data and display your colours int he right order on the Sense HAT LED Matrix. Type this command underneath your lists:
 
 	```python
@@ -142,6 +144,11 @@ You could write the commands out over and over again but it makes more sense to 
 
 1. Save and run your code to watch the animation. 
 
+1. You will notice that after the animation has completed you are left with the same image still displayed on the LED matrix. There is a great function that you can use that will clear the LEDS. Add this line above your new loop to clear the LEDs when you first run your program:
+
+	```python
+	sense.clear()
+	```
 
 ## Create a walking function
 
@@ -164,22 +171,36 @@ A `function` is a piece of code that you can use over and over. As the goal is t
 
 	```python
 	walking()
-	```		         	
+	```			         	
 
 ## Shake to trigger action
 
+It's time to use the Sense HATs movement sensors, in particular its `accelerometer` to trigger the walking function to make the project more interactive.
 
-```python
+1. Underneath your walking function but above the functionc all line of `walking()` type:
 
-x, y, z = sense.get_accelerometer_raw.values()
+	```python
+	x, y, z = sense.get_accelerometer_raw.values()
 
-while x<2 and y<2 and z<2:
-    x, y, z = sense.get_accelerometer_raw.values()
+	while x<2 and y<2 and z<2:    	
+		x, y, z = sense.get_accelerometer_raw.values()
+	
+	walking()
+	```
+	
+	The first line will get current movement readings from the sense hat on it's x, y and z coordinates. As your Raspberry Pi is most likely sat still on a desk, those readings will have a very low value.
+	
+	Then a `while` loop is introduced to continually check the accelerometer values to see if they have changed to above or equal to the value `2`. You can help the sense hat have an accelerometer reading of above the value `2` by shaking it!
+	
+	![](images/idle3-code3.png)
+	
+1. Check your code, especially the indentation [against this version here](code/space-pet.py).	
+	
+1. Save your code and run it. Nothing should happen until you shake your Raspberry Pi. 	
 
-walking()
-time.sleep(2)
-```
 
 ## What next?
-- Can you create more actions in order to look after your space pet?
-    	
+
+- Do you need to make use of the `sense.clear()` function to make your program work how you want?
+- What other sensors could you use to trigger functions that are on the Sense HAT? Can you create more actions in order to look after your space pet like feeding or petting?
+- Could you make a dice or simon says game like the ones in the [Getting Started with the Sense HAT resource](https://www.raspberrypi.org/learning/getting-started-with-the-sense-hat/)?    	
