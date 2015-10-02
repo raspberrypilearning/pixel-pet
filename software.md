@@ -21,7 +21,7 @@ sudo pip3 install pypng
 ## Installing 8x8 Grid Draw
 
 ```bash
-git clone https://github.com/mrichardson23/RPi_8x8GridDraw.git
+git clone https://github.com/jrobinson-uk/RPi_8x8GridDraw
 ```
 
 
