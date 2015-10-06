@@ -49,7 +49,7 @@ First you'll need to design your pet avatar before you program any actions. [Her
 	```
 	You'll notice that we have eight rows and eight columns of letters, each separated by a comma, to make up the LED matrix on the Sense HAT.
 	
-1. Repeat this step for	 your second pet design so that you end up with two grids of letters.
+1. Repeat this step for your second pet design so that you end up with two grids of letters.
 
 	Can you think of any problems that might arise when only using one letter to label different colours? How might you solve this problem?	
 
@@ -127,7 +127,7 @@ Now that you have your designs represented as letters into a grid or array, you 
 	
 ## Animate your pet using a loop
 
-So far your pixel pet only changes once. To fully animate you will need to repeat switching between the pictures with a time delay over and over again. 
+So far your pixel pet only changes once. To animate it fully, you will need to switch repeatedly between the pictures with a time delay. 
 
 You could write the commands out over and over again but it makes more sense to put them into a loop. 
 
@@ -140,13 +140,13 @@ You could write the commands out over and over again but it makes more sense to 
         sense.set_pixels(pet2)
         time.sleep(0.5)
 	```
-	Don't foget to add the extra `time.sleep(0.5)` on the last line and remember to indent the lines after `for i in range(10):`. Indenting those lines mean that they are inside the for loop. 
+	Don't foget to add the extra `time.sleep(0.5)` on the last line and remember to indent the lines after `for i in range(10):`. Indenting those lines mean that they are inside the `for` loop. 
 	
 	A `for` loop with the `range` function. This will repeat the indented code 10 times and stop.
 
 1. Save and run your code to watch the animation. 
 
-1. You will notice that after the animation has completed you are left with the same image still displayed on the LED matrix. There is a great function that you can use that will clear the LEDS. Add this line above your new loop to clear the LEDs when you first run your program:
+1. You will notice that after the animation has completed, you are left with the same image still displayed on the LED matrix. There is a great function that you can use that will clear the LEDS. Add this line above your new loop to clear the LEDs when you first run your program:
 
 	```python
 	sense.clear()
