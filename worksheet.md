@@ -14,7 +14,7 @@ First you'll need to design your pet avatar before you program any actions. [Her
 	
 1. Simply select the colour you wish to use from the grid with your mouse pointer and then select the circle in the grid to change it to that colour. 
 
-1. Alternatively, you may wish to draw your picture out on square paper with colour pencils instead like this:
+1. Alternatively, you may wish to draw your picture out on square paper with coloured pencils instead like this:
 
 	![square paper avatar](images/square-paper.png)
 
