@@ -140,9 +140,7 @@ You could write the commands out over and over again but it makes more sense to 
         sense.set_pixels(pet2)
         time.sleep(0.5)
 	```
-	Don't foget to add the extra `time.sleep(0.5)` on the last line and remember to indent the lines after `for i in range(10):`. Indenting those lines mean that they are inside the `for` loop. 
-	
-	A `for` loop with the `range` function. This will repeat the indented code 10 times and stop.
+	Don't foget to add the extra `time.sleep(0.5)` on the last line and remember to indent the lines after `for i in range(10):`. Indenting those lines mean that they are inside the `for` loop. This `for` loop with the `range` function will repeat the indented code ten times and stop.
 
 1. Save and run your code to watch the animation. 
 
