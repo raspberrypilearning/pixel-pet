@@ -18,16 +18,16 @@ First you'll need to design your pet avatar before you program any actions. [Her
 
 	![square paper avatar](images/square-paper.png)
 
-1. You will need another pet design, preferably one that is very similar to the first so that we can animate your pet. Here you can see the same image as above, but the feet are in a different place:
+1. You will need another pet design, preferably one that is very similar to the first so that we can animate your pet. Here you can see the image is almost identical to the one above, but the feet are in a different place:
 
 	![](images/square-paper-2.png)	
 	
-	Later when you code your animation, you will create the illusion that the pet is walking.
+	Later, when you code your animation, you will create the illusion that the pet is walking.
 	
 ## Label each pixel of your image
 
 1. Think of a letter from the alphabet to represent each colour in your pixel pet image. e.g. `w` for white or `r` for red. 
-1. If you are using square paper for your design you can write the letters on top like this:
+1. If you are using squared paper for your design, you can write the letters on top like this:
 
 	![](images/label-squares.png)
 	
@@ -47,13 +47,13 @@ First you'll need to design your pet avatar before you program any actions. [Her
 	e, g, e, g, e, g, e, e,
 	e, e, e, e, e, e, e, e
 	```
-	You'll notice that we have 8 rows and 8 columns of letters each separated by a comma that make up the LED matrix on the Sense HAT.
+	You'll notice that we have eight rows and eight columns of letters, each separated by a comma, to make up the LED matrix on the Sense HAT.
 	
 1. Repeat this step for	 your second pet design so that you end up with two grids of letters.
 
 	Can you think of any problems that might arise when only using one letter to label different colours? How might you solve this problem?	
 
-## Code your Pet in Python 3
+## Code your pet in Python 3
 Now that you have your designs represented as letters into a grid or array, you can start to code them in Python.
 
 1. Click on **Menu**, **Programming** followed by **Python 3**. This will open the Python 3 shell window.
@@ -107,7 +107,7 @@ Now that you have your designs represented as letters into a grid or array, you 
 
 	![](images/idle3-code2.png)
 
-1. If you ran your code now nothing would happen because so far you have only told the program to store information. To make something happen you will need to write a command to call on that data and display your colours int he right order on the Sense HAT LED Matrix. Type this command underneath your lists:
+1. If you ran your code now, nothing would happen because so far you have only told the program to store information. To make something happen, you will need to write a command to call on that data and display your colours in the right order on the Sense HAT LED Matrix. Type this command underneath your lists:
 
 	```python
 	sense.set_pixels(pet1)
@@ -125,7 +125,7 @@ Now that you have your designs represented as letters into a grid or array, you 
 	Save and run your code to see your pet.
 	
 	
-## Animate your Pet using a loop
+## Animate your pet using a loop
 
 So far your pixel pet only changes once. To fully animate you will need to repeat switching between the pictures with a time delay over and over again. 
 
