@@ -177,7 +177,7 @@ A `function` is a piece of code that you can use over and over. As the goal is t
 
 ## Shake to trigger action
 
-It's time to use the Sense HATs movement sensors, in particular its `accelerometer` to trigger the walking function to make the project more interactive.
+It's time to use the Sense HAT's movement sensors, in particular its `accelerometer` to trigger the walking function to make the project more interactive.
 
 1. Underneath your walking function but above the functionc all line of `walking()` type:
 
@@ -190,7 +190,7 @@ It's time to use the Sense HATs movement sensors, in particular its `acceleromet
 	walking()
 	```
 	
-	The first line will get current movement readings from the sense hat on it's x, y and z coordinates. As your Raspberry Pi is most likely sat still on a desk, those readings will have a very low value.
+	The first line will get current movement readings from the sense hat on its x, y, and z coordinates. As your Raspberry Pi is presumably sitting still on a desk, those readings will have a very low value.
 	
 	Then a `while` loop is introduced to continually check the accelerometer values to see if they have changed to above or equal to the value `2`. You can help the sense hat have an accelerometer reading of above the value `2` by shaking it!
 	
@@ -203,6 +203,6 @@ It's time to use the Sense HATs movement sensors, in particular its `acceleromet
 
 ## What next?
 
-- Do you need to make use of the `sense.clear()` function to make your program work how you want?
+- Do you need to make use of the `sense.clear()` function to make your program work the way you want?
 - What other sensors could you use to trigger functions that are on the Sense HAT? Can you create more actions in order to look after your space pet like feeding or petting?
-- Could you make a dice or simon says game like the ones in the [Getting Started with the Sense HAT resource](https://www.raspberrypi.org/learning/getting-started-with-the-sense-hat/)?    	
+- Could you make a dice or Simon Says game like the ones in the [Getting Started with the Sense HAT resource](https://www.raspberrypi.org/learning/getting-started-with-the-sense-hat/)?    	
