@@ -14,7 +14,7 @@ sudo apt-get upgrade
 
 ### Installing Pypng
 
-Type the folloiwng command into a **Terminal** window and press **Enter** to insall the python png library:
+Type the following command into a **Terminal** window and press **Enter** to install the Python PNG library:
 
 ```bash
 sudo pip3 install pypng
@@ -22,7 +22,7 @@ sudo pip3 install pypng
 
 ### Installing 8x8 Grid Draw
 
-Type the folloiwng command into a **Terminal** window and press **Enter** to clone the RPi 8x8 Grid Draw software:
+Type the following command into a **Terminal** window and press **Enter** to clone the RPi 8x8 Grid Draw software:
 
 ```bash
 git clone https://github.com/jrobinson-uk/RPi_8x8GridDraw
