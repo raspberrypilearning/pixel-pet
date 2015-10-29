@@ -1,6 +1,6 @@
 By creating your very own interactive pixel pet with code you will learn:
 
 - How to use `variables` and `lists` in Python to display an image on the Sense HAT LED matrix.
-- To use `for loops` and `while loops` repeat some instructions.
+- How to use `for loops` and `while loops` to repeat some instructions.
 - How to create a `function` in Python.
-- To use the Sense Hat's accerelometer to detect movement and trigger some code.
+- How to use the Sense Hat's accelerometer to detect movement and trigger some code.
