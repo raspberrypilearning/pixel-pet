@@ -6,19 +6,19 @@ Using sensors and output devices is a great way to make your computer programs m
 
 First you'll need to design your pet avatar before you program any actions. [Here are some examples](https://www.youtube.com/watch?v=PpHFQXoISWc) to give you an idea! You can also print [this worksheet](files/printable-worksheet.pdf) to help you design your pixel pet.
 
-1. Open a Terminal by clicking on **Menu**, **Accessories** and **Terminal**
+1. Open a Terminal by clicking on **Menu**, **Accessories** and **Terminal**.
 1. Type `cd RPi_8x8GridDraw` and press **Enter** on the keyboard.
-1. Next type `8x8grid-sense.py` This will run an application which you can use to draw your space pet avatar. 
+1. Next, type `8x8grid-sense.py`. This will run an application which you can use to draw your space pet avatar. 
 
 	![8x8gridraw application](images/GUI.png)
 	
-1. Simply select the colour you wish to use from the grid with your mouse pointer and then select the circle in the grid to change it to that colour. 
+1. Simply select the colour you wish to use from the grid with your mouse pointer, and then select the circle in the grid to change it to that colour. 
 
-1. Alternatively, you may wish to draw your picture out on square paper with coloured pencils instead like this:
+1. Alternatively, you may wish to draw your picture out on squared paper with coloured pencils instead like this:
 
 	![square paper avatar](images/square-paper.png)
 
-1. You will need another pet design, preferably one that is very similar to the first so that we can animate your pet. Here you can see the image is almost identical to the one above, but the feet are in a different place:
+1. You will need another pet design, preferably one that is very similar to the first, so that we can animate your pet. Here you can see the image is almost identical to the one above, but the feet are in a different place:
 
 	![](images/square-paper-2.png)	
 	
@@ -33,7 +33,7 @@ First you'll need to design your pet avatar before you program any actions. [Her
 	
 	Note that `e` stands for `empty`.
 
-1. If you are using the 8x8GridDraw editor then you can write out your squares on paper, representing each colour with a letter and separating them with a comma. Alternatively you could type them into a text editor like **Leafpad** which you can find by clicking on **Menu**, **Acessories** and **Text Editor**. 
+1. If you are using the 8x8GridDraw editor then you can write out your squares on paper, representing each colour with a letter and separating them with a comma. Alternatively, you could type them into a text editor like **Leafpad** which you can find by clicking on **Menu**, **Accessories** and **Text Editor**. 
 	
 	You'll end up with something that looks like this:
 	
@@ -47,6 +47,7 @@ First you'll need to design your pet avatar before you program any actions. [Her
 	e, g, e, g, e, g, e, e,
 	e, e, e, e, e, e, e, e
 	```
+	
 	You'll notice that we have eight rows and eight columns of letters, each separated by a comma, to make up the LED matrix on the Sense HAT.
 	
 1. Repeat this step for your second pet design so that you end up with two grids of letters.
@@ -54,10 +55,11 @@ First you'll need to design your pet avatar before you program any actions. [Her
 	Can you think of any problems that might arise when only using one letter to label different colours? How might you solve this problem?	
 
 ## Code your pet in Python 3
-Now that you have your designs represented as letters into a grid or array, you can start to code them in Python.
 
-1. Click on **Menu**, **Programming** followed by **Python 3**. This will open the Python 3 shell window.
-1. Next click on **File** and **New File** to open an empty text editor window. 
+Now that you have your designs represented as letters in a grid or array, you can start to code them in Python.
+
+1. Click on **Menu** then **Programming**, followed by **Python 3**. This will open the Python 3 shell window.
+1. Next, click on **File** and **New File** to open an empty text editor window. 
 1. Save this empty file as `space-pet.py`.
 1. First you will need to import all the modules and libraries you will need for this project in your code by typing:
 
@@ -65,6 +67,7 @@ Now that you have your designs represented as letters into a grid or array, you 
 	from sense_hat import SenseHat
 	import time
 	```
+	
 1. Underneath type:
 
 	```python
@@ -73,7 +76,7 @@ Now that you have your designs represented as letters into a grid or array, you 
 	
 	Note that capital letters, full stops and commas are very important in Python. Your code might not work if you do not include these.
 
-1. Next create a `Variable` for each colour label in your pet design like this:
+1. Next, create a `Variable` for each colour label in your pet design like this:
 
 	```python
 	p = (204, 0, 204) # Pink
@@ -82,11 +85,12 @@ Now that you have your designs represented as letters into a grid or array, you 
 	y = (2014, 2014, 0) # Yellow
 	e = (0, 0, 0) # Empty
 	```
-	The numbers used here inside the brackets are `RGB` values or `Red, Green and Blue` values. A mixture of these colours make different colours. The higher the number the more of that colour it will contain. For example: `(255, 0, 0)` would make a solid red colour, whereas `(0, 255, 0)` would create a vivid green colour. 
+	
+	The numbers used here inside the brackets are `RGB` values, or `Red, Green and Blue` values. A mixture of these colours make different colours. The higher the number, the more of that colour it will contain. For example, `(255, 0, 0)` would make a solid red colour, whereas `(0, 255, 0)` would create a vivid green colour. 
 	
 	You can change these numbers in your code to get the colours that you want. 
 	
-1. Next use a `list` to store your pixel pet design like this:
+1. Next, use a `list` to store your pixel pet design like this:
 
 	```python
 	pet1 = [
@@ -101,37 +105,39 @@ Now that you have your designs represented as letters into a grid or array, you 
 		]
 	```
 	
-	Here you have created a variable called `pet1` and stored a list of labels for each colour by using `[` at the start of the each letter and `]` at the end. 
+	Here you have created a variable called `pet1` and stored a list of labels for each colour by using `[` at the start of each letter and `]` at the end. 
 	
-1. Repeat for the second pixel pet design using a different variable name like `pet2`.
+1. Repeat for the second pixel pet design, using a different variable name like `pet2`.
 
 	![](images/idle3-code2.png)
 
-1. If you ran your code now, nothing would happen because so far you have only told the program to store information. To make something happen, you will need to write a command to call on that data and display your colours in the right order on the Sense HAT LED Matrix. Type this command underneath your lists:
+1. If you ran your code now nothing would happen, because so far you have only told the program to store information. To make something happen, you will need to write a command to call on that data and display your colours in the right order on the Sense HAT LED matrix. Type this command underneath your lists:
 
 	```python
 	sense.set_pixels(pet1)
 	```
+	
 1. Save your code by pressing `Ctrl` + `S` on the keyboard followed by `F5`. 
 
-	Note what happens. Why did only one of your pet designs display? It is because you have only called `pet1` in your command.
+	Note what happens. Why did only one of your pet designs display? It's because you have only called `pet1` in your command.
 	
-1. Add a delay using the `time.sleep` function and then call the second picture using the same command as before like this:
+1. Add a delay using the `time.sleep` function, and then call the second picture using the same command as before like this:
 
 	```python
 	time.sleep(0.5)
 	sense.set_pixels(pet2)
 	```					    	
+	
 	Save and run your code to see your pet.
 	
 	
 ## Animate your pet using a loop
 
-So far your pixel pet only changes once. To animate it fully, you will need to switch repeatedly between the pictures with a time delay. 
+So far, your pixel pet only changes once. To animate it fully, you will need to switch repeatedly between the pictures with a time delay. 
 
 You could write the commands out over and over again but it makes more sense to put them into a loop. 
 
-1. Move to the end of your program and locate the `sense.set_pixels(pet1)` part and amend it look like this:
+1. Move to the end of your program and locate the `sense.set_pixels(pet1)` part. Amend it to look like this:
 
 	```python
     for i in range(10):
@@ -140,11 +146,12 @@ You could write the commands out over and over again but it makes more sense to 
         sense.set_pixels(pet2)
         time.sleep(0.5)
 	```
-	Don't foget to add the extra `time.sleep(0.5)` on the last line and remember to indent the lines after `for i in range(10):`. Indenting those lines mean that they are inside the `for` loop. This `for` loop with the `range` function will repeat the indented code ten times and stop.
+	
+	Don't forget to add the extra `time.sleep(0.5)` on the last line and remember to indent the lines after `for i in range(10):`. Indenting those lines means that they are inside the `for` loop. This `for` loop with the `range` function will repeat the indented code ten times and then stop.
 
 1. Save and run your code to watch the animation. 
 
-1. You will notice that after the animation has completed, you are left with the same image still displayed on the LED matrix. There is a great function that you can use that will clear the LEDS. Add this line above your new loop to clear the LEDs when you first run your program:
+1. You will notice that after the animation has completed, you are left with the same image still displayed on the LED matrix. There is a great function that you can use that will clear the LEDs. Add this line above your new loop to clear the LEDs when you first run your program:
 
 	```python
 	sense.clear()
@@ -152,9 +159,9 @@ You could write the commands out over and over again but it makes more sense to 
 
 ## Create a walking function
 
-A `function` is a piece of code that you can use over and over. As the goal is to trigger the walking animation later on it makes sense for us to put the animation code into a function that can be called when an action has been sensed by the hardware. 
+A `function` is a piece of code that you can use over and over. As the goal is to trigger the walking animation later on, it makes sense for us to put the animation code into a function that can be called when an action has been sensed by the hardware. 
 
-1. To put your code into a function you simply need to add this line above your `for` loop and indent the lines beneath like this:
+1. To put your code into a function, you simply need to add this line above your `for` loop and indent the lines beneath like this:
 
 	```python
 	def walking():	
@@ -177,7 +184,7 @@ A `function` is a piece of code that you can use over and over. As the goal is t
 
 It's time to use the Sense HAT's movement sensors, in particular its `accelerometer` to trigger the walking function to make the project more interactive.
 
-1. Underneath your walking function but above the functionc all line of `walking()` type:
+1. Underneath your walking function, but above the function call line of `walking()`, type:
 
 	```python
 	x, y, z = sense.get_accelerometer_raw.values()
@@ -188,9 +195,9 @@ It's time to use the Sense HAT's movement sensors, in particular its `accelerome
 	walking()
 	```
 	
-	The first line will get current movement readings from the sense hat on its x, y, and z coordinates. As your Raspberry Pi is presumably sitting still on a desk, those readings will have a very low value.
+	The first line will get current movement readings from the Sense HAT on its x, y, and z coordinates. As your Raspberry Pi is presumably sitting still on a desk, those readings will have a very low value.
 	
-	Then a `while` loop is introduced to continually check the accelerometer values to see if they have changed to above or equal to the value `2`. You can help the sense hat have an accelerometer reading of above the value `2` by shaking it!
+	Then a `while` loop is introduced to continually check the accelerometer values, to see if they have changed to above or equal to the value `2`. You can help the Sense HAT have an accelerometer reading of above `2` by shaking it!
 	
 	![](images/idle3-code3.png)
 	
@@ -202,5 +209,5 @@ It's time to use the Sense HAT's movement sensors, in particular its `accelerome
 ## What next?
 
 - Do you need to make use of the `sense.clear()` function to make your program work the way you want?
-- What other sensors could you use to trigger functions that are on the Sense HAT? Can you create more actions in order to look after your space pet like feeding or petting?
+- What other sensors could you use to trigger functions that are on the Sense HAT? Can you create more actions in order to look after your space pet, like feeding or petting?
 - Could you make a dice or Simon Says game like the ones in the [Getting Started with the Sense HAT resource](https://www.raspberrypi.org/learning/getting-started-with-the-sense-hat/)?    	
