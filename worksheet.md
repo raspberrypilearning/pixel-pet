@@ -8,7 +8,7 @@ First you'll need to design your pet avatar before you program any actions. [Her
 
 1. Open a Terminal by clicking on **Menu**, **Accessories** and **Terminal**.
 1. Type `cd RPi_8x8GridDraw` and press **Enter** on the keyboard.
-1. Next, type `8x8grid-sense.py`. This will run an application which you can use to draw your space pet avatar. 
+1. Next, type `python3 sense_grid.py`. This will run an application which you can use to draw your space pet avatar. 
 
 	![8x8gridraw application](images/GUI.png)
 	
