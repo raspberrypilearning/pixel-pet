@@ -82,7 +82,7 @@ Now that you have your designs represented as letters in a grid or array, you ca
 	p = (204, 0, 204) # Pink
 	g = (0, 102, 102) #	 Dark Green
 	w = (200, 200, 200) # White
-	y = (2014, 2014, 0) # Yellow
+	y = (204, 204, 0) # Yellow
 	e = (0, 0, 0) # Empty
 	```
 	
@@ -187,10 +187,10 @@ It's time to use the Sense HAT's movement sensors, in particular its `accelerome
 1. Underneath your walking function, but above the function call line of `walking()`, type:
 
 	```python
-	x, y, z = sense.get_accelerometer_raw.values()
+	x, y, z = sense.get_accelerometer_raw().values()
 
 	while x<2 and y<2 and z<2:    	
-		x, y, z = sense.get_accelerometer_raw.values()
+		x, y, z = sense.get_accelerometer_raw().values()
 	
 	walking()
 	```
