@@ -58,7 +58,7 @@ First you'll need to design your pet avatar before you program any actions. [Her
 
 Now that you have your designs represented as letters in a grid or array, you can start to code them in Python.
 
-1. Click on **Menu** then **Programming**, followed by **Python 3**. This will open the Python 3 shell window.
+1. Click on **Menu** then **Programming**, followed by **Python 3 (IDLE)**. This will open the Python 3 shell window.
 1. Next, click on **File** and **New File** to open an empty text editor window. 
 1. Save this empty file as `space-pet.py`.
 1. First you will need to import all the modules and libraries you will need for this project in your code by typing:
@@ -109,8 +109,6 @@ Now that you have your designs represented as letters in a grid or array, you ca
 	
 1. Repeat for the second pixel pet design, using a different variable name like `pet2`.
 
-	![](images/idle3-code2.png)
-
 1. If you ran your code now nothing would happen, because so far you have only told the program to store information. To make something happen, you will need to write a command to call on that data and display your colours in the right order on the Sense HAT LED matrix. Type this command underneath your lists:
 
 	```python
@@ -119,18 +117,23 @@ Now that you have your designs represented as letters in a grid or array, you ca
 	
 1. Save your code by pressing `Ctrl` + `S` on the keyboard followed by `F5`. 
 
+
+    <iframe src="https://trinket.io/embed/python/46300eab23" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
 	Note what happens. Why did only one of your pet designs display? It's because you have only called `pet1` in your command.
 	
-1. Add a delay using the `time.sleep` function, and then call the second picture using the same command as before like this:
+1. Add a delay using the `sleep` function, and then call the second picture using the same command as before like this:
 
 	```python
-	time.sleep(0.5)
+	sleep(0.5)
 	sense.set_pixels(pet2)
 	```					    	
 	
 	Save and run your code to see your pet.
 	
-	
+	<iframe src="https://trinket.io/embed/python/ab748e4522" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 ## Animate your pet using a loop
 
 So far, your pixel pet only changes once. To animate it fully, you will need to switch repeatedly between the pictures with a time delay. 
@@ -142,14 +145,18 @@ You could write the commands out over and over again but it makes more sense to 
 	```python
     for i in range(10):
         sense.set_pixels(pet1)
-        time.sleep(0.5)
+        sleep(0.5)
         sense.set_pixels(pet2)
-        time.sleep(0.5)
+        sleep(0.5)
 	```
 	
-	Don't forget to add the extra `time.sleep(0.5)` on the last line and remember to indent the lines after `for i in range(10):`. Indenting those lines means that they are inside the `for` loop. This `for` loop with the `range` function will repeat the indented code ten times and then stop.
+	Don't forget to add the extra `sleep(0.5)` on the last line and remember to indent the lines after `for i in range(10):`. Indenting those lines means that they are inside the `for` loop. This `for` loop with the `range` function will repeat the indented code ten times and then stop.
 
-1. Save and run your code to watch the animation. 
+1. Save and run your code to watch the animation.
+
+
+    <iframe src="https://trinket.io/embed/python/3b41d00de6" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 
 1. You will notice that after the animation has completed, you are left with the same image still displayed on the LED matrix. There is a great function that you can use that will clear the LEDs. Add this line above your new loop to clear the LEDs when you first run your program:
 
@@ -167,9 +174,9 @@ A `function` is a piece of code that you can use over and over. As the goal is t
 	def walking():	
 		for i in range(10):
         	sense.set_pixels(pet1)
-        	time.sleep(0.5)
+        	sleep(0.5)
         	sense.set_pixels(pet2)
-        	time.sleep(0.5)
+        	sleep(0.5)
     ```
 
 	The use of `def` here means that you are ***defining*** a function which you have called ***walking***.
@@ -198,8 +205,9 @@ It's time to use the Sense HAT's movement sensors, in particular its `accelerome
 	The first line will get current movement readings from the Sense HAT on its x, y, and z coordinates. As your Raspberry Pi is presumably sitting still on a desk, those readings will have a very low value.
 	
 	Then a `while` loop is introduced to continually check the accelerometer values, to see if they have changed to above or equal to the value `2`. You can help the Sense HAT have an accelerometer reading of above `2` by shaking it!
-	
-	![](images/idle3-code3.png)
+
+
+    <iframe src="https://trinket.io/embed/python/4ff36df371" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 	
 1. Check your code, especially the indentation [against this version here](code/space-pet.py).	
 	

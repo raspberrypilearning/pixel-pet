@@ -1,5 +1,5 @@
 from sense_hat import SenseHat
-import time
+from time import sleep
 
 sense = SenseHat()
 
@@ -37,9 +37,9 @@ x, y, z = sense.get_accelerometer_raw().values()
 def walking():
     for i in range(10):
         sense.set_pixels(pet1)
-        time.sleep(0.5)
+        sleep(0.5)
         sense.set_pixels(pet2)
-        time.sleep(0.5)
+        sleep(0.5)
 
 while x<2 and y<2 and z<2:
     x, y, z = sense.get_accelerometer_raw().values()
