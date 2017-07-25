@@ -1,0 +1,27 @@
+---
+title: Interactive Pixel Pet
+hero_image: images/banner.png
+description: Make your very own digital space pixel pet with your Raspberry Pi and
+  Sense HAT.
+original_url: https://raspberrypi.org/learning/pixel-pet
+theme: red
+duration: 2
+listed: false
+ingredient: false
+copyedit: true
+curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+interests: ''
+technologies: rpi, physical computing, python
+site_areas: ''
+steps:
+- title: Introduction
+- title: What you will need
+- title: Interactive Pixel Pet
+- title: Draw your Pixel Pet
+- title: Label each pixel of your image
+- title: Code your pet in Python 3
+- title: Animate your pet using a loop
+- title: Create a walking function
+- title: Shake to trigger action
+- title: What next?
+
