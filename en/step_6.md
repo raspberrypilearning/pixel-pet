@@ -1,80 +1,29 @@
-## Code your pet in Python 3
+### Animate your pet
 
-Now that you have your designs represented as letters in a grid or array, you can start to code them in Python.
+So far, your pixel pet only changes when you type into the shell. To animate it fully, you will need to switch repeatedly between the pictures with a time delay. 
 
-- Click on **Menu** then **Programming**, followed by **Python 3 (IDLE)**. This will open the Python 3 shell window.
-- Next, click on **File** and **New File** to open an empty text editor window. 
-- Save this empty file as `space-pet.py`.
-- First you will need to import all the modules and libraries you will need for this project in your code by typing:
+You could write the commands out over and over again but it makes more sense to put them into a loop.
 
-	```python
-	from sense_hat import SenseHat
-	import time
-	```
-	
-- Underneath type:
+To complete this section you need to create a loop that runs ten times. Within the loop, the pets should be displayed on the Sense HAT, and be switched every half-second.
 
-	```python
-	sense = SenseHat()
-	```	
-	
-	Note that capital letters, full stops and commas are very important in Python. Your code might not work if you do not include these.
+Have a look at the hints below to learn how to do this.
 
-- Next, create a `Variable` for each colour label in your pet design like this:
+--- hints --- --- hint ---
+1. Create a for loop that iterates over a range of 10
+2. Within the for loop, set the first pet, sleep for half a second, and then set the second pet
+3. Add a final sleep of half a second before the loop cycles around again
+--- /hint --- --- hint ---
+Here's some code that has been partially completed:
 
-	```python
-	p = (204, 0, 204) # Pink
-	g = (0, 102, 102) #	 Dark Green
-	w = (200, 200, 200) # White
-	y = (204, 204, 0) # Yellow
-	e = (0, 0, 0) # Empty
-	```
-	
-	The numbers used here inside the brackets are `RGB` values, or `Red, Green and Blue` values. A mixture of these colours make different colours. The higher the number, the more of that colour it will contain. For example, `(255, 0, 0)` would make a solid red colour, whereas `(0, 255, 0)` would create a vivid green colour. 
-	
-	You can change these numbers in your code to get the colours that you want. 
-	
-- Next, use a `list` to store your pixel pet design like this:
-
-	```python
-	pet1 = [
-	    e, e, e, e, e, e, e, e,
-		p, e, e, e, e, e, e, e,
-		e, p, e, e, p, e, p, e,
-		e, p, g, g, p, y, y, e,
-		e, g, g, g, y, w, y, g,
-		e, g, g, g, g, y, y, e,
-		e, g, e, g, e, g, e, e,
-		e, e, e, e, e, e, e, e
-		]
-	```
-	
-	Here you have created a variable called `pet1` and stored a list of labels for each colour by using `[` at the start of each letter and `]` at the end. 
-	
-- Repeat for the second pixel pet design, using a different variable name like `pet2`.
-
-- If you ran your code now nothing would happen, because so far you have only told the program to store information. To make something happen, you will need to write a command to call on that data and display your colours in the right order on the Sense HAT LED matrix. Type this command underneath your lists:
-
-	```python
-	sense.set_pixels(pet1)
-	```
-	
-- Save your code by pressing `Ctrl` + `S` on the keyboard followed by `F5`. 
-
-
-    <iframe src="https://trinket.io/embed/python/46300eab23" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
-
-	Note what happens. Why did only one of your pet designs display? It's because you have only called `pet1` in your command.
-	
-- Add a delay using the `sleep` function, and then call the second picture using the same command as before like this:
-
-	```python
+```python
+for i in range(## Add a value here):
+	## set your first pet
 	sleep(0.5)
-	sense.set_pixels(pet2)
-	```					    	
-	
-	Save and run your code to see your pet.
-	
-	<iframe src="https://trinket.io/embed/python/ab748e4522" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+	## set your second pet
+	sleep(0.5)
+```
 
+--- /hint --- --- hint ---
+Here's a video showing you how to animate your pet:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hdupFogp8D0" frameborder="0" allowfullscreen></iframe>
+--- /hint --- --- /hints ---

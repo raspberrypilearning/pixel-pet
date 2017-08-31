@@ -1,23 +1,26 @@
-## Create a walking function
+## Shake to activate
 
-A `function` is a piece of code that you can use over and over. As the goal is to trigger the walking animation later on, it makes sense for us to put the animation code into a function that can be called when an action has been sensed by the hardware. 
+It's time to use the Sense HAT's movement sensors, in particular its accelerometer, to trigger the `walking` function you've created. This will make the project more interactive.
+You'll need an infinite loop to begin with. Within the loop, you need to fetch the **raw** accelerometer readings. If the `x`, `y`, or `z` component of the accelerometer reading is above `2`, then your `walking()` function should be called.
 
-- To put your code into a function, you simply need to add this line above your `for` loop and indent the lines beneath like this:
+If everything works correctly, shaking the Sense HAT will then animate your pixel pet!
 
-	```python
-	def walking():	
-		for i in range(10):
-        	sense.set_pixels(pet1)
-        	sleep(0.5)
-        	sense.set_pixels(pet2)
-        	sleep(0.5)
-    ```
+Take a look at the hints below for help with writing the script.
 
-	The use of `def` here means that you are ***defining*** a function which you have called ***walking***.
-
-- Now you need to call the function so at the bottom of your code type:
-
-	```python
-	walking()
-	```			         	
+--- hints --- --- hint ---
+- In Python, an infinite loop can be created using a the line `while True:`
+- You can use the `get_accelerometer_raw()` method to get a dictionary with the `x`, `y`, and `z` components of the accelerometer reading
+- You can use an `if` conditional to see if any of the components are above 2
+--- /hint --- --- hint ---
+Here's some code to get you started:
+```python
+while True:
+    acc = sense.get_accelerometer_raw()
+	if accc['x] > 2 or ## Now check the y and z components
+	    ## call your walking function here
+```
+--- /hint --- --- hint ---
+Here's a video showing you how the script can be written:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6l7HDCmYKCQ" frameborder="0" allowfullscreen></iframe>
+--- /hint --- --- /hints ---
 

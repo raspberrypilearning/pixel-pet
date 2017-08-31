@@ -1,30 +1,23 @@
-## Animate your pet using a loop
+## Create a `walking` function
 
-So far, your pixel pet only changes once. To animate it fully, you will need to switch repeatedly between the pictures with a time delay. 
+The code you have written that animates your pet now needs to be placed inside a function. This will allow you to trigger the code when an action is performed.
 
-You could write the commands out over and over again but it makes more sense to put them into a loop. 
+Have a look at the section below if you are unfamiliar with Python function. Then place your loop inside its own named function. In the example below, the function is called 'walking'.
 
-- Move to the end of your program and locate the `sense.set_pixels(pet1)` part. Amend it to look like this:
+[[[generic-python-simple-functions]]]
 
-	```python
-    for i in range(10):
-        sense.set_pixels(pet1)
-        sleep(0.5)
-        sense.set_pixels(pet2)
-        sleep(0.5)
-	```
-	
-	Don't forget to add the extra `sleep(0.5)` on the last line and remember to indent the lines after `for i in range(10):`. Indenting those lines means that they are inside the `for` loop. This `for` loop with the `range` function will repeat the indented code ten times and then stop.
+Have a look at the hints below if you are unsure how to do this.
 
-- Save and run your code to watch the animation.
-
-
-    <iframe src="https://trinket.io/embed/python/3b41d00de6" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
-
-- You will notice that after the animation has completed, you are left with the same image still displayed on the LED matrix. There is a great function that you can use that will clear the LEDs. Add this line above your new loop to clear the LEDs when you first run your program:
-
-	```python
-	sense.clear()
-	```
-
+--- hints --- --- hint ---
+You can create a function by using the key word `def` followed by the name of the function, and then by `():`. Your loop can then be placed below the function definition, which means it's inside the function. Note that for this to work, you need to indent the lines of code of your loop.
+--- /hint --- --- hint ---
+Here's a little bit of code to help you out:
+```python
+def walking():
+    #code goes here
+	#make sure it's indented!
+```
+--- /hint --- --- hint ---
+Here's a video showing the function creation:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MvSpKRVJHsE" frameborder="0" allowfullscreen></iframe>
+--- /hint --- --- /hints ---
