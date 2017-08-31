@@ -1,12 +1,12 @@
 title: A Raspberry Pi pixel pet
 hero_image: images/banner.png
 description: Make a walking pixel pet with your Raspberry Pi and a Sense HAT
-original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
-theme: cc-prototype
+original_url: https://www.raspberrypi.org/learning/pixel-pet/
+theme: red
 duration: 2
 ingredient: false
-listed: false
-copyedit: false
+listed: true
+copyedit: true
 interests:
 technologies:
 steps:
