@@ -1,6 +1,6 @@
 ## Draw your pixel pet
 
-First you'll need to design your pet avatar. [Here are some examples](https://www.youtube.com/watch?v=PpHFQXoISWc) to give you an idea! You can also print [this worksheet](resources/printable-worksheet.pdf) to help you design your pixel pet.
+First you'll need to design your pet avatar. [Here are some examples](https://www.youtube.com/watch?v=PpHFQXoISWc&rel=0){:target="_blank"} to give you an idea! You can also print [this worksheet](resources/printable-worksheet.pdf){:target="_blank"} to help you design your pixel pet.
 
 1. Open a Terminal by clicking on **Menu**, **Accessories**, and then **Terminal**.
 1. Type `cd RPi_8x8GridDraw` and press **Enter**.
