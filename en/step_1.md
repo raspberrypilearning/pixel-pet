@@ -1,6 +1,6 @@
 ##  Introduction
 
-Using sensors and output devices is a great way to make your computer programs more interactive. The Raspberry Pi Sense HAT contains a whole set of sensors that can be used to detect movement. In this resource, you will use these to take a digital pet for a walk. You can watch a video tutorial for the project [here](https://www.youtube.com/watch?v=gfRDFvEVz-w).
+Using sensors and output devices is a great way to make your computer programs more interactive. The Raspberry Pi Sense HAT contains a whole set of sensors that can be used to detect movement. In this resource, you will use these to take a digital pet for a walk. You can watch a video tutorial for the project [here](https://www.youtube.com/watch?v=gfRDFvEVz-w&rel=0).
 
 ## What you will learn
 
@@ -14,10 +14,10 @@ By creating your very own interactive pixel pet with code you will learn how to:
 This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
 
 - [Design basic 2D and 3D assets](https://www.raspberrypi.org/curriculum/design/creator)
-- [Combine programming constructs to solve a problem](https://www.raspberrypi.org/curriculum/programming/builder)
+- [Apply basic programming constructs to solve a problem](https://www.raspberrypi.org/curriculum/programming/builder)
 - [Combine inputs and/or outputs to create projects or solve a problem](https://www.raspberrypi.org/curriculum/physical-computing/builder)
 
 
 ## The finished project
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2Bvlb6KC9Rk" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2Bvlb6KC9Rk&rel=0" frameborder="0" allowfullscreen></iframe>
