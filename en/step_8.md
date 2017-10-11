@@ -16,11 +16,10 @@ Here's some code to get you started:
 ```python
 while True:
     acc = sense.get_accelerometer_raw()
-	if accc['x] > 2 or ## Now check the y and z components
-	    ## call your walking function here
+    if acc['x'] > 2 or ## Now check the y and z components
+        ## call your walking function here
 ```
 --- /hint --- --- hint ---
 Here's a video showing you how the script can be written:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6l7HDCmYKCQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6l7HDCmYKCQ&rel=0" frameborder="0" allowfullscreen></iframe>
 --- /hint --- --- /hints ---
-
