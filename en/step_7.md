@@ -14,10 +14,10 @@ You can create a function by using the key word `def` followed by the name of th
 Here's a little bit of code to help you out:
 ```python
 def walking():
-    #code goes here
-	#make sure it's indented!
+    # code goes here
+    # make sure it's indented!
 ```
 --- /hint --- --- hint ---
 Here's a video showing the function creation:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MvSpKRVJHsE" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MvSpKRVJHsE&rel=0" frameborder="0" allowfullscreen></iframe>
 --- /hint --- --- /hints ---
