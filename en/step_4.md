@@ -2,7 +2,7 @@
 
 Now that you have your designs represented as letters in a grid or array, you can start to code them in Python.
 
-- Open IDLE and create a new Python file
+- Open IDLE and create a new Python file.
 
 [[[rpi-gui-idle-opening]]]
 
