@@ -8,7 +8,7 @@ First you'll need to design your pet avatar. [Here are some examples](https://ww
 
 	![8x8gridraw application](images/GUI.png)
 
-1. Simply select the colour you wish to use from the grid with your mouse pointer, and then select the circle in the grid to change it to that colour.
+1. Simply select the colour you wish to use from the grid with your mouse pointer, and then select a circle in the grid to change it to that colour.
 
 1. Alternatively, you may wish to draw your picture out on squared paper with coloured pencils, like this:
 
