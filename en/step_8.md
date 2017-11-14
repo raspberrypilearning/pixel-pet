@@ -21,5 +21,5 @@ while True:
 ```
 --- /hint --- --- hint ---
 Here's a video showing you how the script can be written:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6l7HDCmYKCQ&rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6l7HDCmYKCQ" frameborder="0" allowfullscreen></iframe>
 --- /hint --- --- /hints ---
