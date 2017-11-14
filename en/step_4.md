@@ -43,5 +43,5 @@ r = (255, 0, 0)
 ```
 --- /hint --- --- hint ---
 Here's a video showing you how to set your colours:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/j5J85lA0JJs&rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j5J85lA0JJs" frameborder="0" allowfullscreen></iframe>
 --- /hint --- --- /hints ---
