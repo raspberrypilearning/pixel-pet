@@ -41,5 +41,5 @@ The pet you designed earlier can now be represented by a Python list.
 title: Video help
 ---
 Here's a video to help you out if you get stuck:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gBbYjKGAQsM&rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gBbYjKGAQsM" frameborder="0" allowfullscreen></iframe>
 --- /collapse ---

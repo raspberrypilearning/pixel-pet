@@ -19,5 +19,5 @@ def walking():
 ```
 --- /hint --- --- hint ---
 Here's a video showing the function creation:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MvSpKRVJHsE&rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MvSpKRVJHsE" frameborder="0" allowfullscreen></iframe>
 --- /hint --- --- /hints ---

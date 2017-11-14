@@ -25,5 +25,5 @@ for i in range(## Add a value here):
 
 --- /hint --- --- hint ---
 Here's a video showing you how to animate your pet:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hdupFogp8D0&rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hdupFogp8D0" frameborder="0" allowfullscreen></iframe>
 --- /hint --- --- /hints ---
