@@ -13,9 +13,9 @@ technologies: raspberry-pi, python, sense-hat
 hardware: ''
 software: ''
 site_areas: projects
-version: 4
+version: 4.0.1
 last_tested: 2018-02-01
-steps: 
+steps:
 - title: Introduction
 - title: What you will need
 - title: Draw your pixel pet
