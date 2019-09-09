@@ -2,9 +2,9 @@
 
 Now that you have your designs represented as letters in a grid or array, you can start to code them in Python.
 
-- Open IDLE and create a new Python file.
+- Open mu.
 
-[[[rpi-gui-idle-opening]]]
+[[[mu-open ]]]
 
 - Save this empty file as `space-pet.py`.
 - First you need to import all the modules and libraries you will use for this project by typing:
