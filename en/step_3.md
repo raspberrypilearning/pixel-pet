@@ -2,15 +2,7 @@
 
 First you'll need to design your pet avatar. [Here are some examples](https://www.youtube.com/watch?v=PpHFQXoISWc&rel=0){:target="_blank"} to give you an idea! 
 
-1. Open a Terminal by clicking on **Menu**, **Accessories**, and then **Terminal**.
-1. Type `cd RPi_8x8GridDraw` and press **Enter**.
-1. Next, type `python3 sense_grid.py`. This will run an application which you can use to draw your space pet avatar.
-
-	![8x8gridraw application](images/GUI.png)
-
-1. Simply select the colour you wish to use from the grid with your mouse pointer, and then select a circle in the grid to change it to that colour.
-
-1. Alternatively, you may wish to draw your picture out on squared paper with coloured pencils, like this:
+1. Draw your picture out on squared paper with coloured pencils, like this:
 
 	![square paper avatar](images/square-paper.png)
 
