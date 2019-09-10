@@ -1,23 +1,26 @@
-## Create a `walking` function
+## Shake to activate
 
-The code you have written that animates your pet now needs to be placed inside a function. This will allow you to trigger the code when an action is performed.
+It's time to use the Sense HAT's movement sensors, in particular its accelerometer, to trigger the `walking` function you've created. This will make the project more interactive.
 
-Have a look at the section below if you are unfamiliar with Python function. Then place your loop inside its own named function. In the example below, the function is called 'walking'.
+You'll need an infinite loop to begin with. Within the loop, you need to fetch the **raw** accelerometer readings. If the `x`, `y`, or `z` component of the accelerometer reading is above `2`, then your `walking()` function should be called.
 
-[[[generic-python-simple-functions]]]
+If everything works correctly, shaking the Sense HAT will then animate your pixel pet!
 
-Have a look at the hints below if you are unsure how to do this.
+Take a look at the hints below for help with writing the script.
 
 --- hints --- --- hint ---
-You can create a function by using the key word `def` followed by the name of the function, and then by `():`. Your loop can then be placed below the function definition, which means it's inside the function. Note that for this to work, you need to indent the lines of code of your loop.
+- In Python, an infinite loop can be created using a the line `while True:`
+- You can use the `get_accelerometer_raw()` method to get a dictionary with the `x`, `y`, and `z` components of the accelerometer reading
+- You can use an `if` conditional to see if any of the components are above 2
 --- /hint --- --- hint ---
-Here's a little bit of code to help you out:
+Here's some code to get you started:
 ```python
-def walking():
-    # code goes here
-    # make sure it's indented!
+while True:
+    acc = sense.get_accelerometer_raw()
+    if acc['x'] > 2 or ## Now check the y and z components
+        ## call your walking function here
 ```
 --- /hint --- --- hint ---
-Here's a video showing the function creation:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MvSpKRVJHsE" frameborder="0" allowfullscreen></iframe>
+Here's a video showing you how the script can be written:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6l7HDCmYKCQ" frameborder="0" allowfullscreen></iframe>
 --- /hint --- --- /hints ---

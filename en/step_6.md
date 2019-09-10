@@ -1,29 +1,23 @@
-### Animate your pet
+## Create a "walking" function
 
-So far, your pixel pet only changes when you type into the shell. To animate it fully, you will need to switch repeatedly between the pictures with a time delay.
+The code you have written that animates your pet now needs to be placed inside a function. This will allow you to trigger the code when an action is performed.
 
-You could write the commands out over and over again but it makes more sense to put them into a loop.
+Have a look at the section below if you are unfamiliar with Python function. Then place your loop inside its own named function. In the example below, the function is called 'walking'.
 
-To complete this section you need to create a loop that runs ten times. Within the loop, the pets should be displayed on the Sense HAT, and be switched every half-second.
+[[[generic-python-simple-functions]]]
 
-Have a look at the hints below to learn how to do this.
+Have a look at the hints below if you are unsure how to do this.
 
 --- hints --- --- hint ---
-1. Create a for loop that iterates over a range of 10
-2. Within the for loop, set the first pet, sleep for half a second, and then set the second pet
-3. Add a final sleep of half a second before the loop cycles around again
+You can create a function by using the key word `def` followed by the name of the function, and then by `():`. Your loop can then be placed below the function definition, which means it's inside the function. Note that for this to work, you need to indent the lines of code of your loop.
 --- /hint --- --- hint ---
-Here's some code that has been partially completed:
-
+Here's a little bit of code to help you out:
 ```python
-for i in range(## Add a value here):
-	## set your first pet
-	sleep(0.5)
-	## set your second pet
-	sleep(0.5)
+def walking():
+    # code goes here
+    # make sure it's indented!
 ```
-
 --- /hint --- --- hint ---
-Here's a video showing you how to animate your pet:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hdupFogp8D0" frameborder="0" allowfullscreen></iframe>
+Here's a video showing the function creation:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MvSpKRVJHsE" frameborder="0" allowfullscreen></iframe>
 --- /hint --- --- /hints ---
