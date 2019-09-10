@@ -4,9 +4,11 @@ So far, your pixel pet only changes when you type into the shell. To animate it 
 
 You could write the commands out over and over again but it makes more sense to put them into a loop.
 
+--- task ---
 To complete this section you need to create a loop that runs ten times. Within the loop, the pets should be displayed on the Sense HAT, and be switched every half-second.
 
 Have a look at the hints below to learn how to do this.
+--- /task ---
 
 --- hints --- --- hint ---
 1. Create a for loop that iterates over a range of 10

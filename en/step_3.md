@@ -2,31 +2,42 @@
 
 Now that you have your designs represented as letters in a grid or array, you can start to code them in Python.
 
-- Open mu.
+--- task ---
+Open mu.
 
 [[[mu-open]]]
+--- /task ---
 
-- Save this empty file as `space-pet.py`.
-- First you need to import all the modules and libraries you will use for this project by typing:
+--- task ---
+Save this empty file as `space-pet.py`.
+--- /task ---
 
-	```python
-	from sense_hat import SenseHat
-	from time import sleep
-	```
+--- task ---
+First you need to import all the modules and libraries you will use for this project by typing:
 
-- Next you need to create a `SenseHat()` object to interact with the Sense HAT:
+```python
+from sense_hat import SenseHat
+from time import sleep
+```
+--- /task ---
 
-	```python
-	sense = SenseHat()
-	```
+--- task ---
+Next you need to create a `SenseHat()` object to interact with the Sense HAT:
 
-	Note that capital letters, full stops, and commas are very important in Python. Your code might not work if you do not include these.
+```python
+sense = SenseHat()
+```
 
-- Create one variable to represent each of the colours you have used in your design. If you use a single letter instead of the full colour name, you will find it easier later on, but make sure you have no duplicates - you can't use `b` for both blue and black!
+Note that capital letters, full stops, and commas are very important in Python. Your code might not work if you do not include these.
+--- /task ---
+
+--- task ---
+Create one variable to represent each of the colours you have used in your design. If you use a single letter instead of the full colour name, you will find it easier later on, but make sure you have no duplicates - you can't use `b` for both blue and black!
 
 ```python
 b = (0, 0, 255)
 ```
+--- /task ---
 
 You can look up the RGB values of the colours using a [colour picker](https://www.w3schools.com/colors/colors_rgb.asp){:target="_blank"}.
 
