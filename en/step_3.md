@@ -4,7 +4,7 @@ Now that you have your designs represented as letters in a grid or array, you ca
 
 - Open mu.
 
-[[[mu-open ]]]
+[[[mu-open]]]
 
 - Save this empty file as `space-pet.py`.
 - First you need to import all the modules and libraries you will use for this project by typing:
