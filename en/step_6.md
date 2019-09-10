@@ -1,4 +1,4 @@
-## Create a `walking` function
+## Create a "walking" function
 
 The code you have written that animates your pet now needs to be placed inside a function. This will allow you to trigger the code when an action is performed.
 
