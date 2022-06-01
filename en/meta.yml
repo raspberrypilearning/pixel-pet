@@ -18,13 +18,15 @@ version: 4.0.1
 last_tested: 2018-02-01
 steps:
 - title: Introduction
-  completion: engaged
 - title: Draw your pixel pet
 - title: Setting your colours
+  completion:
+  - engaged
 - title: Representing your pet
 - title: Animate your pet
 - title: Create a walking function
-  completion: internal
 - title: Shake to activate
+  completion:
+  - internal
 - title: 'Challenge: What else can you do?'
   challenge: true
