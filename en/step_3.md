@@ -45,14 +45,10 @@ These variables are called **tuples**.
 
 [[[generic-python-tuples]]]
 
---- hints --- --- hint ---
-Give your variable a name, then add in the three numbers that represent the colour, separated by commas and surrounded by parentheses.
---- /hint --- --- hint ---
-If you wanted to code the colour red, then you would use this code:
-```python
-r = (255, 0, 0)
-```
---- /hint --- --- hint ---
+--- hints ---
+--- hint ---
 Here's a video showing you how to set your colours:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/j5J85lA0JJs" frameborder="0" allowfullscreen></iframe>
---- /hint --- --- /hints ---
+--- /hint ---
+--- /hints ---
+
