@@ -8,19 +8,10 @@ If everything works correctly, shaking the Sense HAT will then animate your pixe
 
 Take a look at the hints below for help with writing the script.
 
---- hints --- --- hint ---
-- In Python, an infinite loop can be created using a the line `while True:`
-- You can use the `get_accelerometer_raw()` method to get a dictionary with the `x`, `y`, and `z` components of the accelerometer reading
-- You can use an `if` conditional to see if any of the components are above 2
---- /hint --- --- hint ---
-Here's some code to get you started:
-```python
-while True:
-    acc = sense.get_accelerometer_raw()
-    if acc['x'] > 2 or ## Now check the y and z components
-        ## call your walking function here
-```
---- /hint --- --- hint ---
+--- hints ---
+--- hint ---
 Here's a video showing you how the script can be written:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6l7HDCmYKCQ" frameborder="0" allowfullscreen></iframe>
---- /hint --- --- /hints ---
+--- /hint ---
+--- /hints ---
+

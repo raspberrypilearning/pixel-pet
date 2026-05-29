@@ -10,22 +10,10 @@ To complete this section you need to create a loop that runs ten times. Within t
 Have a look at the hints below to learn how to do this.
 --- /task ---
 
---- hints --- --- hint ---
-1. Create a for loop that iterates over a range of 10
-2. Within the for loop, set the first pet, sleep for half a second, and then set the second pet
-3. Add a final sleep of half a second before the loop cycles around again
---- /hint --- --- hint ---
-Here's some code that has been partially completed:
-
-```python
-for i in range(## Add a value here):
-	## set your first pet
-	sleep(0.5)
-	## set your second pet
-	sleep(0.5)
-```
-
---- /hint --- --- hint ---
+--- hints ---
+--- hint ---
 Here's a video showing you how to animate your pet:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hdupFogp8D0" frameborder="0" allowfullscreen></iframe>
---- /hint --- --- /hints ---
+--- /hint ---
+--- /hints ---
+
