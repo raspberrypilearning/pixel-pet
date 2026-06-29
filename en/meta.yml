@@ -6,7 +6,7 @@ original_url: https://www.raspberrypi.org/learning/pixel-pet/
 theme: red
 duration: 2
 ingredient: false
-listed: true
+listed: false
 copyedit: true
 curriculum: 3, design-1, programming-3, phys-comp-1, manufacture-0, community-0
 interests: animals, games
